@@ -4,7 +4,7 @@ metadata:
   name: nginxapp-ingress
 spec:
   rules:
-  - host: "foo.com"
+  - host: "footest22.com"
     http:
       paths:
       - pathType: Prefix
