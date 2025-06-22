@@ -3,14 +3,14 @@ kind: Ingress
 metadata:
   name: nginxapp-ingress
 spec:
-  ingressClassName: nginx
   rules:
-  - http:
+  - host: "foo.com"
+    http:
       paths:
-      - path: /
-        pathType: Prefix
+      - pathType: Prefix
+        path: "/"
         backend:
           service:
-            name: nginxapp
+            name: nginxapp-svc
             port:
               number: 80
