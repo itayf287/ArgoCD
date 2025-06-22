@@ -1,12 +1,12 @@
 apiVersion: v1
-kind: Pod
+kind: Service
 metadata:
-  name: nginx
-  lables:
-    name: nginxapp
+  name: nginxapp-svc
 spec:
-  containers:
-  - name: nginx
-    image: nginx:1.14.2
-    ports:
-    - containerPort: 80
+  selector:
+    appname: nginxappp
+  ports:
+  - name: nginxapp
+    protocol: TCP
+    port: 80
+    targetPort: http-web-svc
