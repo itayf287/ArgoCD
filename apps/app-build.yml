@@ -7,8 +7,8 @@ spec:
     namespace: app
     server: https://kubernetes.default.svc
   source:
-    path: .
-    repoURL: https://psifas-git.spirit.net/zeus/hp22/argocd/app.git
+    path: ./apps/data
+    repoURL: https://github.com/itayf287/ArgoCD
     targetRevision: HEAD
   sources: []
   project: default
