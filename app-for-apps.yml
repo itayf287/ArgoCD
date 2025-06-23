@@ -4,8 +4,8 @@ metadata:
   name: app-for-apps
 spec:
   destination:
-    namespace: app
-    server: https://kubernetes.default.svc
+    name: in-cluster
+    namespace: argocd
   source:
     path: apps
     repoURL: https://github.com/itayf287/ArgoCD
