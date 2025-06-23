@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: nginxapp1
+  name: nginxapp2
 spec:
   destination:
     namespace: app
