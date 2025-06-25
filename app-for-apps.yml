@@ -8,7 +8,7 @@ spec:
     namespace: argocd
   source:
     path: apps
-    repoURL: https://github.com/itayf287/ArgoCD
+    repoURL: git@github.com:itayf287/ArgoCD.git
     targetRevision: HEAD
   sources: []
   project: default
